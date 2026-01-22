@@ -19,14 +19,15 @@ const Home = () => {
             <img
               src="./threejs.png"
               alt="logo"
-              className="w-8 h-8 object-contain"
+              className="w-30 h-12 object-contain"
             />
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
                 {" "}
-                LET'S <br className="xl:block hidden" /> DO IT.
+                Design Masters <br className="xl:block hidden" />
+                Competition 🏆
               </h1>
             </motion.div>
             <motion.div
@@ -34,9 +35,10 @@ const Home = () => {
               className="flex flex-col gap-5"
             >
               <p className=" max-w-md font-normal text-gray-600 text-base">
-                Create your unique and exclusive shirt with our Brand-new 3D
-                Customization Tool. <strong>Unleash your imagaintation</strong>{" "}
-                and define your own style.
+                Unleash your creativity with OQBI’s brand-new 3D Shirt
+                Customization Tool and bring your vision to life in a{" "}
+                <strong>fully immersive design experience</strong> and define
+                your own style.
               </p>
 
               <CustomButton

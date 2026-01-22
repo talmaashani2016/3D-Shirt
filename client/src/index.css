@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,7 +28,7 @@ html {
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  @apply xl:text-[6rem] text-[5rem] xl:leading-[8rem] leading-[6rem] font-black text-black;
 }
 
 .download-btn {
