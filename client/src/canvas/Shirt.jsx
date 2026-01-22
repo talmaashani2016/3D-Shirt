@@ -29,7 +29,7 @@ const Shirt = () => {
           <Decal
             position={[0, 0, 0]}
             rotation={[0, 0, 0]}
-            scale={1}
+            scale={1.5}
             map={fullTexture}
           />
         )}

@@ -17,28 +17,27 @@ const Home = () => {
         <motion.section className="home" {...slideAnimation("left")}>
           <motion.header {...slideAnimation("down")}>
             <img
-              src="./threejs.png"
+              src="./oqbi_plain.png"
               alt="logo"
               className="w-30 h-12 object-contain"
             />
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className="head-text">
+              <h2 className="head-text">
                 {" "}
-                Design Masters <br className="xl:block hidden" />
-                Competition 🏆
-              </h1>
+                OQBI 3D <br className="xl:block hidden" />
+                Design 🏆
+              </h2>
             </motion.div>
             <motion.div
               {...headContentAnimation}
               className="flex flex-col gap-5"
             >
               <p className=" max-w-md font-normal text-gray-600 text-base">
-                Unleash your creativity with OQBI’s brand-new 3D Shirt
-                Customization Tool and bring your vision to life in a{" "}
-                <strong>fully immersive design experience</strong> and define
-                your own style.
+                Unleash your creativity with OQBI’s brand-new 3D Shirt and bring
+                your vision to life in a{" "}
+                <strong>fully immersive design experience.</strong>
               </p>
 
               <CustomButton
