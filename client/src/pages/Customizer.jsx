@@ -52,15 +52,18 @@ const Customizer = () => {
     try {
       //call AI to generate image
       setGeneratingImg(true);
-      const resposne = await fetch("http://localhost:8080/api/v1/dalle", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const resposne = await fetch(
+        "https://threed-shirt-hazf.onrender.com/api/v1/dalle",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            prompt,
+          }),
         },
-        body: JSON.stringify({
-          prompt,
-        }),
-      });
+      );
 
       const data = await resposne.json();
       console.log("The json:", data);
@@ -131,7 +134,7 @@ const Customizer = () => {
                     tab={tab}
                     handleClick={() =>
                       setActiveEditorTab((prev) =>
-                        prev == tab.name ? "" : tab.name
+                        prev == tab.name ? "" : tab.name,
                       )
                     }
                   />
