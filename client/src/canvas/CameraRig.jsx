@@ -14,7 +14,7 @@ const CameraRig = ({ children }) => {
     //set the intial poistion
     let targetPosition = [-0.4, 0, 2];
     if (snap.intro) {
-      if (isBreakpoint) targetPosition = [0, 0, 2];
+      if (isBreakpoint) targetPosition = [0, 0, 4];
       if (isMobile) targetPosition = [0, 0.5, 4.5];
     } else {
       if (isMobile) targetPosition = [0, 0, 2.5];
@@ -28,7 +28,7 @@ const CameraRig = ({ children }) => {
       group.current.rotation,
       [state.pointer.y / 10, -state.pointer.x / 5, 0],
       0.25,
-      delta
+      delta,
     );
   });
 
