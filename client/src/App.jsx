@@ -1,13 +1,9 @@
-import CanvasModel from "./canvas";
-import Customizer from "./pages/Customizer";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <main className="app transition-all ease-in">
+    <main className="min-h-screen transition-all ease-in bg-[url('/bg-main.png')] bg-cover">
       <Home />
-      <CanvasModel />
-      <Customizer />
     </main>
   );
 }

@@ -5,8 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MyFont";
+  src: url("https://raw.githubusercontent.com/talmaashani2016/CustomScripts/AvenirArabic-Medium.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 html {
-  font-family: "Arial", sans-serif;
+  font-family: "MyFont", "Arial", sans-serif;
 }
 
 @supports (font-variation-settings: normal) {
@@ -16,7 +24,7 @@ html {
 }
 
 .app {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full h-screen;
 }
 
 .home {

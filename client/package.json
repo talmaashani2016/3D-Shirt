@@ -11,11 +11,14 @@
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
+    "@reactour/tour": "^3.8.0",
     "@tailwindcss/vite": "^4.1.18",
     "framer-motion": "^12.23.26",
+    "html2canvas": "^1.4.1",
     "react": "^19.2.3",
     "react-color": "^2.19.3",
     "react-dom": "^19.2.3",
+    "react-joyride": "^2.9.3",
     "valtio": "^2.2.0"
   },
   "devDependencies": {
